@@ -1,0 +1,35 @@
+name: HAWKI - Model Repository
+disabled_nodes:
+  - pipeline
+  - infrastructure
+  - binEnv
+max_abstractions: 5
+exclude:
+  - "models.json"
+  - "models.hashes.json"
+remove_exclude:
+  - "**/.github/**"
+  - "**/.*"
+  - "**/.*/**"
+  - "**/static/**"
+run_before:
+  - cd .github/.generate && npm install
+  - cd .github/.generate && npm run swagger
+additional_context:
+  - type: "static"
+    hints:
+      - type: "relevantForReadme"
+        content: |
+          This repository contains only a static models.json file, containing a list of ai models and their metadata,
+          curated for use with HAWKI. No backend or dynamic functionality is included. The readme MUST be focused on that 
+          aspect. The remaining documentation will revolve around how the built process in `.github/.generate` will update this
+          file based on various sources.
+  - type: "local"
+    hints:
+      - type: "relevantForReadme"
+        pattern: ".github/.generate/pages/static/openapi.yml"
+        gitignore: false
+        description: |
+          The OpenAPI specification file that defines the structure of the models.json file in this repository.
+          It is imperative that you highlight key aspects of the API structure defined here, 
+          to tell the user what to expect in the models.json file.

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAWKI - Model Repository</title>
+    <link rel="stylesheet" type="text/css" href="static/swagger-ui.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #2F2ABF;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .api-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: -20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .swagger-container {
+            padding: 0;
+        }
+
+        #swagger-ui {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .swagger-ui .info a.link {
+            color: #2F2ABF;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #2F2ABF;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .footer a:hover {
+            border-bottom-color: #2F2ABF;
+        }
+
+        /* Swagger UI Customizations */
+        .swagger-ui .topbar {
+            display: none;
+        }
+
+        .swagger-ui .info {
+            margin: 2rem 0;
+        }
+
+        .swagger-ui .info .title {
+            color: #2F2ABF;
+        }
+
+        .swagger-ui .info hgroup.main a {
+            display: none;
+        }
+
+        .swagger-ui .info .description {
+            padding-bottom: 2rem;
+        }
+
+        .swagger-ui .info .description p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0.5rem 0 0;
+        }
+
+        .swagger-ui .info .description p:first-of-type {
+            font-size: 1.5rem;
+        }
+
+        .swagger-ui .scheme-container {
+            background: transparent;
+            box-shadow: none;
+            border: 1px solid #e3e8ee;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        /* Loading state */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .loading::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            border: 2px solid #e3e8ee;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 1.5rem 0;
+            }
+
+            .api-container {
+                margin: 20px;
+                margin-top: -10px;
+                border-radius: 8px;
+            }
+
+            #swagger-ui {
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .api-container {
+                margin: 15px;
+                border-radius: 6px;
+            }
+
+            .swagger-ui .info {
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+
+</header>
+
+<div class="api-container">
+    <div class="swagger-container">
+        <div id="swagger-ui" class="loading">Loading API documentation...</div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>
+        Made with 💙 by <a href="https://www.hawki.info/" target="_blank" rel="noopener noreferrer">HAWKI</a>
+    </p>
+</footer>
+
+<script src="static/swagger-ui-bundle.js"></script>
+<script src="static/swagger-ui-standalone-preset.js"></script>
+<script>
+    window.onload = function () {
+        const ui = SwaggerUIBundle({
+            url: './static/openapi.yml',
+            dom_id: '#swagger-ui',
+            deepLinking: true,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            plugins: [
+                SwaggerUIBundle.plugins.DownloadUrl
+            ],
+            layout: 'StandaloneLayout',
+            tryItOutEnabled: true,
+            filter: true,
+            syntaxHighlight: {
+                activate: true,
+                theme: 'agate'
+            },
+            onComplete: function () {
+                // Remove loading state
+                const swaggerContainer = document.getElementById('swagger-ui');
+                swaggerContainer.classList.remove('loading');
+            },
+            onFailure: function (error) {
+                console.error('Failed to load API spec:', error);
+                document.getElementById('swagger-ui').innerHTML =
+                    '<div style="padding: 40px; text-align: center; color: #f93e3e;">' +
+                    '<h3>Failed to load API specification</h3>' +
+                    '<p>Please ensure that <code>openapi.yml</code> exists and is valid.</p>' +
+                    '</div>';
+            }
+        });
+
+        window.ui = ui;
+    };
+</script>
+</body>
+</html>
