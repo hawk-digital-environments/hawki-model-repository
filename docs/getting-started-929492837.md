@@ -81,9 +81,6 @@ Now you are ready to start the pipeline. Run the following command:
 npm start
 ```
 
-> `npm start` vs `npm run model-list`:
-> Use the `npm start` command for local development (with a .env file). The `npm run model-list` command is used in the GitHub Actions workflow, where environment variables are provided differently.
-
 This command executes the main script (`.github/.generate/src/updateModelList.ts`), which will:
 
 - Fetch model data from the configured sources (like OpenRouter).

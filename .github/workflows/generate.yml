@@ -39,9 +39,12 @@ jobs:
           git config --local user.name "GitHub Action"
           git add models.json
           git add models.hashes.json
-          git commit -m "Updated models.json after upstream changes [skip ci]"
-          git push
-          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Updated models.json after upstream changes [skip ci]"
+            git push
+          fi
 
       - name: Dump swagger file
         shell: bash

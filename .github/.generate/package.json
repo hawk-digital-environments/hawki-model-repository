@@ -16,7 +16,6 @@
   },
   "scripts": {
     "start": "tsx --env-file=.env src/updateModelList.ts",
-    "model-list": "tsx src/updateModelList.ts",
     "swagger": "tsx src/dumpSwaggerDocs.ts",
     "prepare-pages": "tsx src/preparePages.ts"
   },
