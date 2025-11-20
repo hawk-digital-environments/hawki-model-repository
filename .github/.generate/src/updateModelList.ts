@@ -9,8 +9,6 @@ import {run} from 'src/processing/run.js';
  * This script is intended to be run as part of a GitHub Actions workflow to keep the model list up-to-date
  * ==================================================================================== */
 
-
-console.log(process.env['INPUT_OPEN-ROUTER-KEY']?.slice(0, 4) + '...' + process.env['INPUT_OPEN-ROUTER-KEY']?.slice(-4));
 /**
  * The API key for OpenRouter, required to fetch the model list from their API
  */

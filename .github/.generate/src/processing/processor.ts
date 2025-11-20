@@ -8,7 +8,7 @@ import type {BatchProcessingStep, ProcessingNoChangeStep, ProcessingOutputStruct
 /**
  * The main processor function that handles the processing of source models against existing models.
  * @param sourceModels The list of models obtained from the sources.
- * @param structure The existing structure structure containing previously processed models.
+ * @param structure The existing structure containing previously processed models.
  * @param hashes The existing hashes structure containing previously calculated hashes. This object can be modified and will be persisted automatically.
  * @param steps Collection of processing steps to apply.
  * @param steps.newAndChanged A list of processing steps to apply when a model has changed or is new.
