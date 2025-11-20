@@ -31,7 +31,7 @@ specObject.info = {
     version: '1.0.0',
     description: `Welcome to the HAWKI Model Repository API! 🚀
     
-**BETA NOTICE:** This API is currently in beta. While we strive for accuracy and reliability, please be aware that the structure and content of the API may change as we continue to improve and expand the list.**
+**BETA NOTICE:** This API is currently in beta. While we strive for accuracy and reliability, please be aware that the structure and content of the API may change as we continue to improve and expand the list.
 
 This API provides comprehensive, up-to-date information about AI models from various providers, including pricing, capabilities, and technical specifications. Whether you're building the next great AI application or just exploring what's available, you'll find everything you need to make informed decisions about model selection.
 

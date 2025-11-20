@@ -29,6 +29,8 @@ run({
         modelsDevSource,
         openRouterSource
         // @todo https://api.aimlapi.com/models could be a good source as well, especially for provider based capabilities
+        // @todo try to get GWDG sources: https://docs.hpc.gwdg.de/services/chat-ai/models/index.html Is there a JSON/API?
+        // @todo https://ki.vcrp.de/modelcards/ Are there API endpoints available?
     ],
     additionalLocales: ['de'],
     additionalCurrencies: ['eur'],
