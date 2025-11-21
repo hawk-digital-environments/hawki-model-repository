@@ -19,7 +19,7 @@ async function fetchModels(): Promise<ModelsDevModel[]> {
         const result = [];
 
         for (const provider of Object.values(response.data)) {
-            const parsedProvider = modelProviderSchema.parse(provider);
+            const parsedProvider = modelProviderSchema.parse(provider, {reportInput: true});
             const {models: _, ...providerWithoutModels} = parsedProvider;
 
             for (const model of Object.values(parsedProvider.models)) {

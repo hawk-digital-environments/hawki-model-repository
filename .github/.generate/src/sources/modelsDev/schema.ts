@@ -11,7 +11,7 @@ export const modelsDevModelSchema = z.object({
     open_weights: z.boolean().optional(),
     modalities: z.object({
         input: z.array(z.enum(['text', 'image', 'file', 'audio', 'video', 'pdf'])),
-        output: z.array(z.enum(['text', 'image', 'audio', 'embeddings']))
+        output: z.array(z.enum(['text', 'image', 'audio', 'embeddings', 'video']))
     }),
     cost: z.object({
         input: z.number().optional(),

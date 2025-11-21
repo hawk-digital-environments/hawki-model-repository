@@ -1,11 +1,9 @@
 import {type ModelInformation, type ModelInformationOfProvider, type ModelInformationSource, ProviderIdentifier} from '../types.js';
 import axios from 'axios';
-import {openRouterModelSchema} from './schema.js';
+import {type OpenRouterModel, openRouterModelSchema} from './schema.js';
 import Big from 'big.js';
 import {getModelBaseId, isJunkModelId} from 'src/util.js';
 
-
-type OpenRouterModel = ReturnType<(typeof openRouterModelSchema)['parse']>;
 
 async function fetchModels(token: string): Promise<OpenRouterModel[]> {
     try {
@@ -29,7 +27,7 @@ async function fetchModels(token: string): Promise<OpenRouterModel[]> {
         return response.data.data.map(
             (model: any) => {
                 console.log(`Validating open router model: ${model.id}`);
-                return openRouterModelSchema.parse(model);
+                return openRouterModelSchema.parse(model, {reportInput: true});
             }
         );
     } catch (e) {
