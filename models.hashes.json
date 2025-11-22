@@ -604,7 +604,7 @@
   "claude-sonnet-3.5-june": "c4ea48db23515de5ce6afe8bc1035dfeadf5e4576c3853abb1abc51d09bbde62",
   "claude-sonnet-4-search": "eb84edd26f73d4d512f88585e5ba4230c6fb7f2c064fa05950d60a4de536e346",
   "tako": "dc156e2d7a822a5ce380ae1c67119138e2892c166b46ad9e2ae27f645c61f9b9",
-  "olmo-3-32b-think": "273bd78a00fd3585d6e4acd286b9a44679eb9e91910088ef66e2aa8245a5a594",
-  "olmo-3-7b-instruct": "f89cde5da0daf32f08246f6152e6793b50ca8a40ef7ceb5c8b9648ba22f9c2f6",
-  "olmo-3-7b-think": "6be71e18388343161d6b9553cc7ebac22e7ff7548c7c900dc8ad33324a0ef7a8"
+  "olmo-3-32b-think": "de959022a2c3bbeb99217944e26e09243ec9c145ec609d20f8f5e484c8e7b381",
+  "olmo-3-7b-instruct": "702939a556fbc4b3affadc9b953299940297200fab4d11e88fa8241c878b747f",
+  "olmo-3-7b-think": "1234f341a2f0d7e1f40f170b45cff0bb243f9466d66bae9a990ca96ac47ede65"
 }
