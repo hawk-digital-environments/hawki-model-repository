@@ -36,7 +36,7 @@
   "qwen2-5-omni-7b": "11249a046a5f568da0ed5527b1eb47e6e18c832306606ee0454b8fa823359777",
   "qwen-max": "271f1088b2a99ea20ef040d67c5a62f175f0467e87c0b5a5d18e0bb53d447add",
   "qwen2-5-7b-instruct": "4936cd8256b66799f3a99ef7a8ad860572d32fb196786354c4ee572a068c4cce",
-  "qwen2-5-vl-7b-instruct": "81f97a1d364d2a99329155108a640f35b91ab7d441e4082c1a8ef906c1e14e8e",
+  "qwen2-5-vl-7b-instruct": "f91c4095d1adc49b9eea3163cc54be90f6683fc00d647a5d9345af0c508b0348",
   "qwen3-235b-a22b": "d3fe79f7fa555c8ec1bd362bd6a8f5cef739b7f68d589456ee4ade79f5238542",
   "qwen-omni-turbo-realtime": "c8ccef3bca1d41284caf5d3201e748bafe6b76ec7a43da5084a8ae5e1a8ef3bd",
   "qwen-mt-turbo": "c8e8baa3f2f1d4cdd8c1bf2bf30cf099a1be43c09c2a9bf1928fb9d8b3cd8bef",
@@ -367,7 +367,7 @@
   "dolphin3.0-r1-mistral-24b": "2c5960fc19bd8e7c3cc02bfdc0fba5e7e039ea8e847a98e6d7cc30849574a258",
   "deepseek-chat-v3.1": "863b20aec0b4810fcb735453de3130e9b53bed6c435863f4ac96eae934682148",
   "deepseek-v3-base": "c633e8ebee9e300e07470f5f2aa6e5ae4565362fdf53407e41aeee102ad0db0b",
-  "deepseek-chat-v3-0324": "b371c361f4ab20ffd48a9d402c8dea9bba5d735d9748871b7bda6dee080e53aa",
+  "deepseek-chat-v3-0324": "37455c3186bddf47d2c0633b3d5dccebf5c0885e8c9ded256c866f6eb4c85cd0",
   "deepseek-v3.1-terminus:exacto": "8ff75998713479d7072378abbfbcb509b0b3b4a4f83eaf8225d4327142951f30",
   "qwerky-72b": "14693fbd050b6c7357dae2419fb500adab44ff16691fe347f5c2c5f3944277fa",
   "deepseek-r1t2-chimera": "cdd52aa4e7149da6cb46a94a3390c2c6ae9a84bd0f261c7d6a39d5a29af17923",
@@ -791,5 +791,6 @@
   "nemotron-3-nano-30b-a3b": "4538b3369a26e685e9fa64fc1b05d246b1798aff528865c603dec2acb9f24afd",
   "mistral-small-creative": "5c5f1831904e77797eaa584a397f662338a93a0093262c9e30ace3aeb11fcbe3",
   "olmo-3.1-32b-think": "35e0a476baa2b41fc80058d588fab14eb7ad101d2a560568b77a929badd86750",
-  "mimo-v2-flash": "db09beaea0970b0f7b0bed0b8214182d4eb2a65c287d040b77646f266b358a56"
+  "mimo-v2-flash": "db09beaea0970b0f7b0bed0b8214182d4eb2a65c287d040b77646f266b358a56",
+  "qwen3-vl-32b-instruct": "bce889192e0722e7b73cd1381e3a36112fbd9f1e630ce0b97c9ad9b29fd7e3ea"
 }
