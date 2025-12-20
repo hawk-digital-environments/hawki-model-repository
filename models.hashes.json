@@ -794,5 +794,6 @@
   "mimo-v2-flash": "5b9d19c4eb5655806fc394541449c49b70a7c65502e0b74b980c8e050e3cd911",
   "qwen3-vl-32b-instruct": "bce889192e0722e7b73cd1381e3a36112fbd9f1e630ce0b97c9ad9b29fd7e3ea",
   "gemini-3-flash": "5e79aeca34bb9444aaabf481c910d0489a0a950e335dcde472db28285ebed3ea",
-  "zai-org-glm-4.6v": "3ee762098ccbe9f6f6eefb0a5e3ac14bbf2082cccc10a25df9bdafd6bda7b451"
+  "zai-org-glm-4.6v": "3ee762098ccbe9f6f6eefb0a5e3ac14bbf2082cccc10a25df9bdafd6bda7b451",
+  "minimax-m2.1": "d11ecff3256a005a0409d694695525909974d21103026b58a00db86c35dd4078"
 }
