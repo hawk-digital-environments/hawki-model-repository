@@ -100,7 +100,7 @@
   "claude-haiku-4.5": "1842f3b80aa67b5723f2c16aeacd06992629355a98bdeba6969b91d49b583db5",
   "oswe-vscode-prime": "1821396b4c288faf9dacdc70d3b97973753d411cd30cabdbf52537e30f3b6ee6",
   "claude-3.5-sonnet": "9f76a53d97865c21ba69b445b89407ad661dc683286f56eead508d0e8b9e9ce8",
-  "gpt-5.1-codex-mini": "784431f7b9bf878f56dd1475fd39586cccaa6187f5463aef9831db6812f8018b",
+  "gpt-5.1-codex-mini": "6df911006343e96f93c107aa4e333a417da57f8b356e9c1642fe8926bbccf329",
   "o3-mini": "1328045cd7ea9b02e3ddc60b4efb221b2e2e3aebcbef7a94558e26ce5c783bcf",
   "gpt-5.1": "e6c16216f7b15d6901f69d67172582cd7259ef2bfccd44160534eea4ee57d102",
   "gpt-5-codex": "5b396617fb9613e36fe0b14b14a3e17a26b176be837d3cbfefd01fd672703dbd",
@@ -795,7 +795,7 @@
   "qwen3-vl-32b-instruct": "bce889192e0722e7b73cd1381e3a36112fbd9f1e630ce0b97c9ad9b29fd7e3ea",
   "gemini-3-flash": "5e79aeca34bb9444aaabf481c910d0489a0a950e335dcde472db28285ebed3ea",
   "zai-org-glm-4.6v": "3ee762098ccbe9f6f6eefb0a5e3ac14bbf2082cccc10a25df9bdafd6bda7b451",
-  "minimax-m2.1": "6e72be75bc63da9da084f795d7e354f15db445b1bcf332796c08961eba09ef1b",
+  "minimax-m2.1": "37ee694fc9b7d2dc64f6e13f1f56c515498e8a94ed222d26e5f5f0ff27bd39df",
   "glm-4.7": "62c3ccf0eca583273ad86ce515913d58e0b1f91e2ce15872be4e0fdab11105cc",
   "glm-4.7-free": "538c3bd74f366debb898fef759a76399a9a390dab6e91cb167ab6a354afc028a",
   "zai-org-glm-4.7": "57febef9c1526a135a776505ec073543a705f3ff923e12ba6e628aec5e55d087",
@@ -832,5 +832,7 @@
   "glm-4.7:thinking": "2ae41f5d690dd4a0cc7d13a9dfda9e8b7896423fffa7b7938db89a022f260d95",
   "glm-4.5-air:thinking": "189b78e0956164aa55d5ae430fd7f3f83c220440edafa444cbc17c2762769a6e",
   "exaone-4.0.1-32b": "bcce0117fcb8744b9c9b254a272aa06cb0a0d3675740aa9f2475baf143e54690",
-  "minimax-m2p1": "a90ffdb6e367d3f8a47c8b3613f7fb1efa70d76491304962b522771e2a0d4c32"
+  "minimax-m2p1": "a90ffdb6e367d3f8a47c8b3613f7fb1efa70d76491304962b522771e2a0d4c32",
+  "minimax-m2.1-free": "8da6842838cbd6c6cb14de8828d004a9a6e342bc5e516b5a8b06c22b344f5faa",
+  "anthropic--claude-haiku-4.5": "a84c10989a83847b989a0194cb6ea43d30deed8dee0c45806249c48ec37cda82"
 }
