@@ -942,5 +942,6 @@
   "deepseek-v3.2-fast": "763e5009fe1ba5b33699e6727916185b12bb59d34986c7d6c2f492370d7b23f6",
   "duo-chat-opus-4-5": "6f882f67025a3d86b3df084c2a7f1d01d78a6c57af4cf16d2a9e7b568b3a4676",
   "duo-chat-sonnet-4-5": "9e0bf89bcddc00ffc1d5bf67ce6874ec00befe157df67572bfec63a0f49e7f92",
-  "duo-chat-haiku-4-5": "f900264af33aabe3abdabfaa5587aca3f8080d9fbc868f257a7ac46b80a9fe6e"
+  "duo-chat-haiku-4-5": "f900264af33aabe3abdabfaa5587aca3f8080d9fbc868f257a7ac46b80a9fe6e",
+  "solar-pro3": "5827094668e2ae75a4662a05feebed06d62e3f2ab6f4e2472266bc6135ce7649"
 }
