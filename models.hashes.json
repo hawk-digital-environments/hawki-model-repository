@@ -944,7 +944,7 @@
   "duo-chat-sonnet-4-5": "9e0bf89bcddc00ffc1d5bf67ce6874ec00befe157df67572bfec63a0f49e7f92",
   "duo-chat-haiku-4-5": "f900264af33aabe3abdabfaa5587aca3f8080d9fbc868f257a7ac46b80a9fe6e",
   "solar-pro3": "5827094668e2ae75a4662a05feebed06d62e3f2ab6f4e2472266bc6135ce7649",
-  "gpt-5.2-codex": "24fb8509805690ae974d607fa68fda806d9da7f5267ad7d258141720fd14beda",
+  "gpt-5.2-codex": "766b128994da78c7dcc8b2b496ca97f756916e128a3d04eb931b6bc1faacf272",
   "baichuan-m2-32b": "c29784dc5f63404373989939a2af9ac9d07fe715306d73c5a0f7cc28cd3f1217",
   "paddleocr-vl": "7e0179e5714030a111fb062650f2d3f2ea6273c16332f6abbf7ed47fd3fab40b",
   "kat-coder": "5903a11609284746ed2ede7d2b3038dd1114f708eb3812fd4da6d027cfbab1e7",
@@ -971,5 +971,6 @@
   "recraft-v2": "b11628de64bb1f04a85af24760e2038a50993bb712c131718fc682e97e5bcda6",
   "seed-1.8": "37edf6ba4fb2bcbb2a309679fbafa164a5658b7c1f2892a9910e0e2ffe0b48fe",
   "kat-dev": "b04f8d1e20bf537d04e6072e2d3e0bb716d9243896df9cbbc95143f7815af26a",
-  "pangu-pro-moe": "df9e6b569af45e2b8dda38ed6edda6ff45e49ad3d669c5fb17e10ed3b758a6d7"
+  "pangu-pro-moe": "df9e6b569af45e2b8dda38ed6edda6ff45e49ad3d669c5fb17e10ed3b758a6d7",
+  "anthropic--claude-4.5-opus": "a54211ee4b0f0f0860a0ad85f9bd53513816145a9ffa179f33235c9ed048d3c7"
 }
